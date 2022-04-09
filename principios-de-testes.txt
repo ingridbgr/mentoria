@@ -1,0 +1,180 @@
+Principios de Testes
+
+Principio 1 -  O teste mostra a presenca de defeitos e nao a sua ausência.
+
+Principio 2 - Teste exaustivo é impossivel, testar tudo nao é viavel.
+
+Principio 3 - Teste inicial economiza tempo e dinheiro.
+
+Principio 4 - Defeitos se agrupam.
+Um numero pequeno de funcoes contem a maioria dos defeitos.
+
+Principio 5 - Cuidado com paradoxo do pesticida.
+Casos de testes precisam ser frequentemente revisados e atualizados.
+
+Principio 6 - Teste depende do contexto.
+Necessita ser realizado de forma diferente conforme a situacao.
+
+Principio 7 - Ausencia de erros é uma ilusao.
+Encontrar e consertar defeitos nao ajuda se o sistema nao atende as expectativas dos usuarios.
+Processo de teste
+
+Nao existe um processo universal de teste.
+Sempre avalie o contexto, sempre leve em consideracao a realidade do time.
+
+Fatores que influenciam o processo
+	- Modelo de Ciclo de Vida / Metodologias
+	- Niveis e tipos de testes
+	- Riscos de produto e projeto.
+		* produto relacionado as necessidades e projeto relacionado ao custo.
+	
+		Atividades e Tarefas de TESTE
+
+Planejamento 
+Monitoramento e Controle
+Analise
+Modelagem
+Implementacao
+Execucao
+Conclusao
+
+PLANEJAMENTO DO TESTE
+
+	Envolve as atividade que definem os propositos e a abordagem do teste.
+É um artefato vivo que voce deve atualizar conforme as necessidades.
+Criterios de Entrada/Saida. O que é necessario pra iniciar e o que é considerado Finalizado.
+
+MONITORAMENTO E CONTROLE
+
+Monitoramento Comparacao continua do progresso real com o plano de teste utilizando qualquer metrica para averiguar as metas definida no plano.
+
+CONTROLE
+
+Tomada de acoes para atender os objetivos do plano de teste
+
+O progresso é comunicado aos stakeholders por meio de relatorios.
+
+ANALISE DO TESTE
+
+Identifica os recursos a serem testados bem como prioriza as condicoes, as implementacoes, modelagem e implementacao dos componentes.
+Avalia a base de teste para identificar defeitos, ambiguidades, omissoes, imprecisoes, contradicoes e declaracoes superfluas.
+
+Aplicacao de tecnicas de teste caixa-preta, caixa-branca e experiencia pode ajudar no processo de analise para reduzir a probabilidade
+de omitir condicoes importantes e DEFINIR condicoes mais corretas e precisas.
+Como Otimizar, aplicar deste de valor limite.
+Tentar identificar defeitos durante a analise.
+
+MODELAGEM DO TESTE define COMO testar
+
+	-Projetar e priorizar conjuntos de casos de teste
+	-Identificar os dados necessarios
+	-Projetar o ambiente de teste e identificar qualquer infraestrutura e ferramentas necessarias.
+	-Capturar a ratreabilidade bidirecional entre a base de teste, as condicoes de teste, os casos de teste e os procedimentos de teste.
+
+A elaboracao das condicoes de teste em casos de teste durante a modeladgem do teste envolve muitas vezes o uso de tecnicas de teste.
+
+Muitas vezes a analise e a modelagem acontecem ao mesmo tempo. 
+
+
+IMPLEMENTACAO DO TESTE
+
+Temos tudo para executar os testes?
+
+Desenvolver e priorizar os Procedimentos de teste (passo a passo), e criar os scripts automatizados.
+	-organizar um cronograma
+	-Construir o ambiente
+	-Preparar os dados e garantir que sejam carregados no ambiente
+	-Verifica e atualiza a rastreabilidade.
+
+Nos teste exploratorios e em outros tipos de teste baseados na experiencia, a modelagem e a implementacao do teste
+podem ocorrer e serem documentadas como parte da execucao do teste.
+
+Ou seja, voce vai documentando quais foram as etapas para execucao do teste porque foi baseado na minha experiencia
+Com determinado fluxo, determinado dados, para ter registrado o que voce fez no teste exploratorio.
+
+EXECUCAO DO TESTE
+
+Executar os teste manualmente ou com ferramentas de automacao
+Comparar resultados reais com os esperados
+Analisar anomalias para estabelecer provaveis causas (Verificar se o resultado é um defeito BUG)
+Comunicar os defeitos
+Registrar o resultado da execucao (Pass, Fail, Block, etc.)
+Executar testes de itens que já foram corrigidos.
+Verificar e atualizar a rastreabilidade dos casos de testes.
+
+CONCLUSAO DO TESTE
+
+A conclusao do teste inclui principalmente as seguintes atividades:
+	- Verificar se todos os relatorios de defeitos estão fechados
+	- Criar um relatorio de resumo de teste para ser comunicado ao stakeholders
+	- Entregar o testware para as equipes de manutencao, outras equipes de projeto ou stakeholders ou quem pode se beneficiar de seu uso
+	- Analisar as licoes aprendidas das atividades de teste concluidas
+	- Usar as informacoes coletadas para melhorar a maturidade do processo de teste.
+PRODUTOS DE TRABALHO DE TESTES
+
+São os entregáveis de cada atividade
+
+Planejamento do teste
+	- Planos de teste
+	- Mapa mentais
+	- Lista rápida com os itens 
+Monitoramento e Controle
+	- Relatorios de progresso / resumo / conclusão
+	- Relatorios de defeitos
+	- Relatorios de Risco / Alocação / recursos / esforço
+Analise
+	- Condições de teste definidas e priorizadas
+	- Defeitos na base de teste
+Modelagem
+	- Casos de teste de alto nivel, derivados das condições identificadas na Análise
+	- Identificação dos dados de teste, ambientes, infra-estrutura
+Implementação
+	- Procedimentos de teste (passo a passo / detalhamento)
+	- Suites de teste
+	- Cronograma de execução
+Execução
+	- Status dos casos de teste
+	- Relatórios de defeitos
+	- Documentação de quais itens estavam envolvidos no teste ( detalhar ambiente / massa etc)
+Conclusão
+	- Relatorios de teste
+	- Planos de ação para melhoria dos próximos projetos
+
+	RASTREABILIDADE ENTRE A BASE DE TESTE E PRODUTOS DE TRABALHO
+	- Analisar o impacto das mudanças
+	- Tornar o teste auditável
+	- Atender aos criterios de governança de T.I.
+	- Melhorar a compreensão dos relatórios de progresso do teste
+	- Relacionar os aspectos técnicos do teste com os stakeholders em termos que eles possam entender
+	- Fornecer informações para avaliar a qualidade do produto, a capacidade do processo e o progresso do projeto em relaçao as metas de negócios
+	- Rastrear metas de negócios com a qualidade do produto
+
+A PSICOLOGIA HUMANA E OS TESTES
+
+A psicologia humana tem efeitos muito importantes no teste software.
+Você ja deve ter passado por algo como aquela velha discussão entre Desenvolvedor e Analista de teste.
+	"É um bug crítico, não consigo reproduzir,na minha máquina funciona"
+Só que isso na verdade não pode mais acontecer, principalmente em ambientes ágeis, onde é necessário a 
+colaboração e comunicação constante. É importantíssimo que a nós como testadores saibamos nos comportar
+para estimular a colaboração entre a equipe.
+
+O teste pode ser considerado uma atividade destrutiva, trazendo crítica contra
+o produto e o autor.  Mas na verdade é o contrario, é uma ativida construtiva
+para o gerenciamento do risco do produto.  Defeitos devem ser comunicados de
+forma construtiva de forma imparcial sem prejudicar o autor.  Deve haver um
+espírito de colaboração entre teste e desenvolvimento.
+
+MENTALIDADE DE UM TESTADOR 
+	- Pessismo profissional ( partir do principio que existe algo errado )
+	- Curiosidade 
+	- Olho critico 
+	- Atenção aos detalhes
+	- Comunicação 
+	- Bons relacionamentos
+
+MENTALIDADE DE UM DESENVOLVEDOR
+	- Foco em projetar / construir e não em procurar defeitos
+	- Sua auto confiança dificulta encontrar erros em seu próprio trabalho
+	- Bons relacionamentos
+	- Comunicação
+
